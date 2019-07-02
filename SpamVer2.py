@@ -14,7 +14,7 @@ def check_exists_by_xpath(xpath):
 '''
 def check_for_textErrors(text) :
     try:
-        username.send_keys('stevenzhang070302@gmail.com')
+        username.send_keys('') #Choose the receiving email
     except:
 '''       
 
@@ -25,14 +25,14 @@ while i <= 9:
     print("We are in Gmail!")
     browser.implicitly_wait(2)
     username = browser.find_element_by_id('identifierId')
-    username.send_keys('roberttzhang2800')
+    username.send_keys('') #Signing into an email
     print("Email entered!")
     nextButton = browser.find_element_by_id('identifierNext')
     nextButton.click()
     print("Password entered!")
     time.sleep(5)
     username = browser.find_element_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input')
-    username.send_keys('happymath28')
+    username.send_keys('') # Email Password
     nextButton = browser.find_element_by_xpath('//*[@id="passwordNext"]/span/span')
     nextButton.click()
     time.sleep(5)
@@ -58,7 +58,7 @@ while i <= 9:
         if check_exists_by_xpath('//*[@id=":9e"]'): 
             print("true")
             username = browser.find_element_by_xpath('//*[@id=":9e"]')
-            username.send_keys('robertzhang2800@gmail.com')
+            username.send_keys('') #Choose receiving email
             print("Typed in email address")
             if check_exists_by_xpath('//*[@id=":8w"]'):
                 print("true")
