@@ -7,3 +7,6 @@ Status: Encountered Errors/Bugs
 
 # Instructions
 Download SpamVer2.py or Spam.py and the selenium library. Selelnium is included in this repository. Run the program using python [file name].py. 
+
+# Inspiration
+This project was based on a codeday(hackathon) and personal project of using selenium webscrapping to brute force a simple username, password login form.
